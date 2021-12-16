@@ -48,6 +48,8 @@ void printArray(vector<int> v, int index){
 
 int main(){
   vector<int> v;
-  
+  string name;
+  cout << "Please Enter Your Name:- ";
+  getline(cin,name);
   return 0;
 }
