@@ -122,6 +122,7 @@ void linearSearch(){
     cin >> tmp;
     cout << "Enter the time delay in seconds:- ";
     cin >> t;
+    cout << "\tImplementing Linear Searching\n";
     for(i = 0; i<v.size(); ++i){
         Sleep(t*1000);
         printArray(v,i);
@@ -312,8 +313,12 @@ void selectionSort()
         sort(index.begin(),index.end());
         Sleep(t*1000);
         printArrays(arr,index);
-        system("PAUSE");
+        }
+    cout << "\n The final Sorted Array\n";
+    loop(i,arr.size()){
+        cout << arr[i] << "  ";
     }
+    cout << endl;
 }
 
 
@@ -372,7 +377,5 @@ int main()
         else
             cout << "\nInvalid choice!! Try Again...\n";
     }
-
-    
     return 0;
 }
